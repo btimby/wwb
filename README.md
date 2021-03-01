@@ -49,7 +49,7 @@ module.exports {
 };
 ```
 
-[](diagram.png)
+[](./diagram.png)
 
 
 To use the above worker, you can include the script in a script tag, or import into your UI code like this:

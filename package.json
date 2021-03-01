@@ -5,7 +5,7 @@
   "main": "wwb.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack-dev-server --config webpack.config.js --host localhost --port 8080 --open"
+    "demo": "webpack-dev-server --config webpack.config.js --host localhost --port 8080 --open"
   },
   "author": "Ben Timby <btimby@gmail.com>",
   "license": "MIT",
