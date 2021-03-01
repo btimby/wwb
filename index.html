@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>
+
+        </title>
+    </head>
+
+    <body>
+        <pre></pre>
+    </body>
+
+    <script type="text/javascript" src="bundle.js"></script>
+    <script type="text/javascript">
+
+        const output = document.getElementsByTagName('pre')[0];
+
+        function log(s) {
+            output.innerText += s + '\n';
+        }
+
+        function doCall() {
+            const functions = [WWB.test1, WWB.test2, WWB.test3, WWB.test4, WWB.tset1];
+            const f = functions[rand(functions.length)];
+
+            f('a', 'b', 'c')
+                .then(log)
+                .catch(log);
+        }
+
+        for (let i = 0; i < 100; i++) {
+            doCall();
+        }
+    </script>
+</html>

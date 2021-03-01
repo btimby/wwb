@@ -1,0 +1,17 @@
+{
+  "name": "wwb",
+  "version": "1.0.0",
+  "description": "WebWorker Bridge",
+  "main": "wwb.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server --config webpack.config.js --host localhost --port 8080 --open"
+  },
+  "author": "Ben Timby <btimby@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "webpack": "^5.1.3",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  }
+}
