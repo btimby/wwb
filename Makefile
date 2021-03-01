@@ -1,0 +1,2 @@
+demo:
+	npm run demo

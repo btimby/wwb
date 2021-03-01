@@ -5,6 +5,12 @@ This library's goal is to make working with a web worker as easy as working with
 
 All function are converted to Promises, as their return values must be passed using `postMessage()`. The global init() function is called in the frontend and backend. There is also a `foreground.init()` and `background.init()`. State is NOT shared between foreground and background. While `this` is available, you should take care because foreground and background have separate state.
 
+## Demo.
+
+To run the demo, run `make demo`. 100 Promises will be started, some in the foreground and some in the background. You will see results in the `<pre>` area as Promises complete.
+
+## Example.
+
 ```javascript
 // MyWorker.js
 
