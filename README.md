@@ -18,6 +18,9 @@ const Wwb = require('wwb.js');
 
 
 const MyWorker = new Wwb({
+  // The URL to this script:
+  script: 'myworker.js',
+
   init() {
     // This is called in the frontend and backend.
   },

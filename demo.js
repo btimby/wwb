@@ -1,4 +1,4 @@
-import { Wwb, isWorker } from './wwb';
+const { Wwb, isWorker } = require('./wwb');
 
 
 function sleep(m) {
@@ -10,8 +10,8 @@ function rand(n) {
 }
 
 const WWB = new Wwb({
-    /* The URL path of this file. TODO: try to detect this.*/
-    script: 'bundle.js',
+    /* The URL path of this file. If omitted this can be detected in all browsers save IE. */
+    // script: 'demo.js',
 
     /*
     Cancel execution after this number of milliseconds. 0 = no timeout.
@@ -81,7 +81,7 @@ if (typeof(window) !== 'undefined') {
     window.rand = rand;
 }
 
-export default {
+module.exports = {
     WWB,
     rand,
 };

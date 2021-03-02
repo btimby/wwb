@@ -1,4 +1,4 @@
-const DEFAULT_TIMEOUT = 60000;
+const DEFAULT_TIMEOUT = 0;
 
 
 /* Detects the environment. */
@@ -66,6 +66,10 @@ function validate(options) {
         if (typeof background[name] !== 'function') {
             throw new Error('All items in background must be functions.');
         }
+    }
+
+    if (!options.script && typeof document !== 'undefined') {
+        options.script = document.currentScript.src;
     }
 }
 
@@ -237,7 +241,7 @@ function Wwb(options) {
     }
 }
 
-export {
+module.exports = {
     Wwb,
     isWorker,
 };
