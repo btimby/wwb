@@ -1,5 +1,5 @@
 describe('Wwb', () => {
-    it('can be loaded', () => {
+  it('can be loaded', () => {
 
-    });
+  });
 });

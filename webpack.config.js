@@ -1,13 +1,13 @@
-const path = require("path");
+const path = require('path');
 
 module.exports = {
-  entry: "./demo.js",
+  entry: './demo.js',
   output: {
-    path: path.resolve(__dirname, "./"),
-    filename: "bundle.js",
+    path: path.resolve(__dirname, './'),
+    filename: 'bundle.js',
   },
   devServer: {
-    contentBase: "./",
+    contentBase: './',
     publicPath: '',
     openPage: 'demo.html',
   },
