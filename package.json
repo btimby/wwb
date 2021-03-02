@@ -10,6 +10,9 @@
   },
   "author": "Ben Timby <btimby@gmail.com>",
   "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
   "devDependencies": {
     "beefy": "^2.1.8",
     "browserify": "^17.0.0",
