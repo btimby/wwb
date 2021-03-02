@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/btimby/wwb.svg?branch=main)](https://travis-ci.org/btimby/wwb)
+[![Build Status](https://travis-ci.org/btimby/wwb.svg?branch=master)](https://travis-ci.org/btimby/wwb)
 
 # wwbridge
 Web worker bridge. 

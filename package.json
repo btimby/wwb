@@ -1,7 +1,7 @@
 {
   "name": "wwbridge",
   "version": "1.0.0",
-  "description": "WebWorker Bridge",
+  "description": "Web Worker Bridge",
   "main": "wwbridge.js",
   "scripts": {
     "lint": "eslint --fix --format node_modules/eslint-friendly-formatter src",
