@@ -1,4 +1,4 @@
-# wwb
+# wwbridge
 Web worker bridge. 
 
 This library's goal is to make working with a web worker as easy as working with any JavaScript module. It aims to handle all of the complexities. You write a module that contains all of the functions you want to run in your worker. Along with all of the functions the worker needs to call in the UI thread. The `Wwb` class wil then build proxy functions for each function. Calling the proxy will invoke the corresponding function on the other side of the worker boundary. The class also starts the worker automatically.
@@ -14,7 +14,7 @@ To run the demo, run `make demo`. 100 Promises will be started, some in the fore
 ```javascript
 // MyWorker.js
 
-const Wwb = require('wwb.js');
+const Wwb = require('wwbridge.js');
 
 
 const MyWorker = new Wwb({

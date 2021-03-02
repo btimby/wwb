@@ -1,4 +1,4 @@
-const { Wwb, isWorker } = require('./src/wwb');
+const { Wwb, isWorker } = require('./src/wwbridge');
 
 function sleep(m) {
   return new Promise((resolve) => setTimeout(resolve, m));

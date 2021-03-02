@@ -1,8 +1,8 @@
 {
-  "name": "wwb",
+  "name": "wwbridge",
   "version": "1.0.0",
   "description": "WebWorker Bridge",
-  "main": "wwb.js",
+  "main": "wwbridge.js",
   "scripts": {
     "lint": "eslint --fix --format node_modules/eslint-friendly-formatter src",
     "demo": "beefy demo.js --live --open --index=/demo.html",

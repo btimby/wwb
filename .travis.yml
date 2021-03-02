@@ -1,0 +1,11 @@
+language: node_js
+node_js:
+  - 12
+script:
+  - make ci
+deploy:
+  provider: npm
+  email: "btimby@gmail.com"
+  api_key: "ZyQ8xCJIbNX7T3ng+X5JZZ6hFhNL9pRLD0M21fI5hPLUSo671NtqdbS68QFkprEYpcU6NlCAw+FY/Ko+cG8lLRraRymOLy02hv8aRV3opPPy+kKLzwjSfbv6Nf1Q7KI27PB6QZwkA1vYJqfsyMGAmnQwr6KYsq8v1KIJeQEKYjF7RfnS2XYdfTDMMCZz3IzUReeNvU87gmkCeZ+hSwMW0NIc7POJjgj4yk2rACs5cAMS5Nur6BDfRsSJlMVmN7hUCETUpwDaxpcza5a2+pAjl2iH1OpY3G3c8k/Bijx1cgJWqsp4oeOE+PrEuYOWcLflCW73eup665uFZSl26TcpRgt9Z4zaMaRUFIzoLz8sieOTscTGjyMXqEMDg9tBGIqj5DwRBVyI4ZXXBki1NpD4sT61Grlz+prOjRAq89Blyf9xvT0DQoUKx0dIkIWoM3cjq8g1xl1SjKHegZB3eOZ6mVgtlbBAMYnjDFSeDJCv+oFSrx5hj8YZfJ5CZjNWsI1cBkcWQdhePz4gVMv5SA87WKbXjgTPc+fVeUIu8gZM5GC9Wwqa+00kCcVOMLhzwLKUu+HntzjhPQCDPfiHL1R/B+JVOap0XiLJw54UBC1d8YJpxVm9VsnL+PcfPpGPfqni/3TmrzaJrI6yc8fyihTW39S/+QjNZQ/b06l7x3fnWGA="
+  on:
+    branch: master

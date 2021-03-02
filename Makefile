@@ -6,3 +6,5 @@ test:
 
 lint:
 	npm run lint
+
+ci: lint test
