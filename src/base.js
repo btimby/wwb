@@ -28,7 +28,6 @@ class WWBBase {
   constructor(timeout, methods, proxies) {
     this._callbacks = {};
     this._remote = {};
-    this._timeout = (timeout === undefined) ? DEFAULT_TIMEOUT : timeout;
     // Create methods, these will run in the current environment.
     this._makeMethods(methods);
     // Create proxies, these will invoke functions in the _other_ environment via
@@ -86,22 +85,6 @@ class WWBBase {
           // Send a message to invoke the requested function. id will be echo'd back
           // with the return or error.
           this._postMessage('call', name, id, args);
-
-          if (this._timeout === 0) return;
-
-          // Implement the timeout.
-          setTimeout(() => {
-            const callbacks = this._callbacks[id];
-            delete this._callbacks[id];
-
-            if (!callbacks) {
-              return;
-            }
-
-            const { resolve, reject } = callbacks;
-
-            reject(new Error('Call timed out'));
-          }, this._timeout);
         });
       };
     }
@@ -111,7 +94,7 @@ class WWBBase {
   _onMessage(ev) {
     const [op, name, id, ...args] = ev.data;
 
-    if (op == 'call') {
+    if (op === 'call') {
       // Messages can be a call request.
       this._remote[name].apply(this, [id, ...args]);
     } else {

@@ -1,9 +1,6 @@
 const WWForeground = require('./foreground');
 const WWBackground = require('./background');
 
-const DEFAULT_TIMEOUT = 0;
-
-
 /* Detects the environment. */
 function isWorker() {
   return (typeof window === 'undefined');
